@@ -94,7 +94,9 @@ const Layout = {
 
   render: function () {
     const user = Auth.currentUser();
-    const page = location.pathname.split('/').pop() || 'index.html';
+    // some hosts drop ".html" from the address (/vehicles), so add it back
+    let page = location.pathname.split('/').pop() || 'index.html';
+    if (page.indexOf('.') === -1) page += '.html';
     const header = document.getElementById('site-header');
 
     if (header) {
