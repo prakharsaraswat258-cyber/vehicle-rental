@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicles - Vehicle Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1>Vehicles</h1>
+    <div class="filters">
+      <div class="field">
+        <label for="type-filter">Type</label>
+        <select id="type-filter">
+          <option value="All">All</option>
+          <option value="Car">Car</option>
+          <option value="Bike">Bike</option>
+          <option value="Scooter">Scooter</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="sort-price">Sort by price</label>
+        <select id="sort-price">
+          <option value="default">Default order</option>
+          <option value="low">Low to high</option>
+          <option value="high">High to low</option>
+        </select>
+      </div>
+      <p class="count muted" id="vehicle-count"></p>
+    </div>
+    <div class="grid" id="vehicle-grid"></div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/logic.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/list.js"></script>
+</body>
+</html>
